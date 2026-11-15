@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 1,
+  "abilities": [
+    {
+      "actionId": 41001,
+      "actionType": "Spell",
+      "castTime": 2,
+      "class": "TelegraphedAOE",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Ability41001",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 40,
+            "kind": "Cone",
+            "minMargin": 30.00246,
+            "priorMatch": 0,
+            "radius": 18.000366,
+            "rawKind": "Cone",
+            "rawRadius": 18.000366
+          },
+          "kind": "ShapeFit",
+          "summary": "Cone score=0.900 r=18"
+        },
+        {
+          "data": [
+            {
+              "consistency": 0,
+              "kind": "Circle",
+              "score": 0
+            },
+            {
+              "consistency": 0,
+              "kind": "Circle",
+              "score": 0
+            },
+            {
+              "consistency": 0,
+              "kind": "Circle",
+              "score": 0
+            },
+            {
+              "consistency": 1,
+              "kind": "Cone",
+              "score": 0.9
+            },
+            {
+              "consistency": 0,
+              "kind": "Cone",
+              "score": 0
+            },
+            {
+              "consistency": 1,
+              "kind": "Rect",
+              "score": 0.8
+            },
+            {
+              "consistency": 0,
+              "kind": "Rect",
+              "score": 0
+            },
+            {
+              "consistency": 0,
+              "kind": "Donut",
+              "score": 0
+            },
+            {
+              "consistency": 0,
+              "kind": "Donut",
+              "score": 0
+            },
+            {
+              "consistency": 0,
+              "kind": "Cross",
+              "score": 0
+            },
+            {
+              "consistency": 0,
+              "kind": "Cross",
+              "score": 0
+            }
+          ],
+          "kind": "ShapeFit",
+          "summary": "candidates"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "TA-1"
+        },
+        {
+          "kind": "OmenUnknown",
+          "summary": "No action sheet omen"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 3,
+      "interruptible": false,
+      "name": "Ability41001",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 40,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "Cone",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 18.000366
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 3,
+        "lagSeconds": 0,
+        "minMargin": 30.00246,
+        "score": 0.9
+      },
+      "sourceOid": 17185
+    },
+    {
+      "actionId": 41002,
+      "actionType": "Spell",
+      "castTime": 2,
+      "class": "TelegraphedAOE",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Ability41002",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "Circle",
+            "minMargin": 8.999602,
+            "priorMatch": 0,
+            "radius": 7.5,
+            "rawKind": "Circle",
+            "rawRadius": 7.499801
+          },
+          "kind": "ShapeFit",
+          "summary": "Circle score=0.900 r=7.5"
+        },
+        {
+          "data": [
+            {
+              "consistency": 1,
+              "kind": "Circle",
+              "score": 0.9
+            },
+            {
+              "consistency": 1,
+              "kind": "Circle",
+              "score": 0.9
+            },
+            {
+              "consistency": 1,
+              "kind": "Circle",
+              "score": 0.9
+            },
+            {
+              "consistency": 1,
+              "kind": "Cone",
+              "score": 0.8
+            },
+            {
+              "consistency": 1,
+              "kind": "Cone",
+              "score": 0.8
+            },
+            {
+              "consistency": 1,
+              "kind": "Rect",
+              "score": 0.8
+            },
+            {
+              "consistency": 1,
+              "kind": "Rect",
+              "score": 0.8
+            },
+            {
+              "consistency": 1,
+              "kind": "Donut",
+              "score": 0.9
+            },
+            {
+              "consistency": 1,
+              "kind": "Donut",
+              "score": 0.9
+            },
+            {
+              "consistency": 1,
+              "kind": "Cross",
+              "score": 0.8
+            },
+            {
+              "consistency": 1,
+              "kind": "Cross",
+              "score": 0.8
+            }
+          ],
+          "kind": "ShapeFit",
+          "summary": "candidates"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "TA-1"
+        },
+        {
+          "kind": "OmenUnknown",
+          "summary": "No action sheet omen"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 3,
+      "interruptible": false,
+      "name": "Ability41002",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "Circle",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 7.5
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 3,
+        "lagSeconds": 0,
+        "minMargin": 8.999602,
+        "score": 0.9
+      },
+      "sourceOid": 17185
+    },
+    {
+      "actionId": 41003,
+      "actionType": "Spell",
+      "castTime": 2,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Ability41003",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 3,
+      "interruptible": false,
+      "name": "Ability41003",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 3,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17185
+    }
+  ],
+  "arena": {
+    "centerX": 99.999985,
+    "centerZ": 99.99997,
+    "confidence": {
+      "band": "High",
+      "reasons": [],
+      "score": 0.9
+    },
+    "evidence": [
+      {
+        "kind": "CenterOffset",
+        "summary": "0"
+      },
+      {
+        "kind": "Bounds",
+        "summary": "Circle n=775 hull/circle=1 hull/box=0.71"
+      }
+    ],
+    "halfHeight": 0,
+    "halfWidth": 0,
+    "kind": "Circle",
+    "radius": 19,
+    "vertices": []
+  },
+  "encounter": {
+    "bossName": "Test Boss",
+    "bossNameId": 12716,
+    "cfcId": 826,
+    "moduleName": "SyntheticShapes",
+    "namespace": "BossMod.Forge.SyntheticShapes",
+    "primaryOid": 17185,
+    "zone": 1234
+  },
+  "enums": {
+    "aid": {
+      "41001": "Ability41001",
+      "41002": "Ability41002",
+      "41003": "Ability41003"
+    },
+    "iconId": {},
+    "oid": {
+      "17185": "Boss"
+    },
+    "sid": {},
+    "tetherId": {}
+  },
+  "icons": [],
+  "overrides": {
+    "values": {}
+  },
+  "participants": [
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [
+          "OID matches pull primary"
+        ],
+        "score": 0.9
+      },
+      "enumName": "Boss",
+      "evidence": [
+        {
+          "kind": "Role",
+          "summary": "Boss"
+        }
+      ],
+      "hitboxRadius": 5,
+      "instanceCount": 1,
+      "name": "Test Boss",
+      "nameId": 12716,
+      "oid": 17185,
+      "role": "Boss",
+      "spawnsDuringFight": false,
+      "type": "Enemy"
+    }
+  ],
+  "pulls": [
+    {
+      "confidence": {
+        "band": "Medium",
+        "reasons": [
+          "combat-gap end"
+        ],
+        "score": 0.7
+      },
+      "durationSeconds": 25.483,
+      "end": "2026-09-19T20:00:26.4860000",
+      "index": 0,
+      "outcome": "Wipe",
+      "source": "SyntheticShapes.log",
+      "start": "2026-09-19T20:00:01.0030000"
+    },
+    {
+      "confidence": {
+        "band": "Medium",
+        "reasons": [
+          "combat-gap end"
+        ],
+        "score": 0.7
+      },
+      "durationSeconds": 25.483,
+      "end": "2026-09-19T20:00:52.9720000",
+      "index": 1,
+      "outcome": "Wipe",
+      "source": "SyntheticShapes.log",
+      "start": "2026-09-19T20:00:27.4890000"
+    },
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "durationSeconds": 25.483,
+      "end": "2026-09-19T20:01:19.4580000",
+      "index": 2,
+      "outcome": "Kill",
+      "source": "SyntheticShapes.log",
+      "start": "2026-09-19T20:00:53.9750000"
+    }
+  ],
+  "review": [],
+  "sources": [
+    {
+      "end": "2026-09-19T20:01:19.4580000",
+      "gameVersion": "2026.08.20.0000.0000",
+      "path": "SyntheticShapes.log",
+      "sha256": "",
+      "start": "2026-09-19T20:00:00.0000000",
+      "version": 24
+    }
+  ],
+  "statuses": [],
+  "tethers": [],
+  "timeline": {
+    "confidence": {
+      "band": "High",
+      "reasons": [],
+      "score": 1
+    },
+    "evidence": [
+      {
+        "data": {
+          "aid": 41001,
+          "delayMad": 0,
+          "delayMedian": 6.1,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 41001,
+              "pull": 0,
+              "t": "2026-09-19T20:00:07.1230000"
+            },
+            {
+              "aid": 41001,
+              "pull": 1,
+              "t": "2026-09-19T20:00:33.6090000"
+            },
+            {
+              "aid": 41001,
+              "pull": 2,
+              "t": "2026-09-19T20:01:00.0950000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=41001 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 41002,
+          "delayMad": 0,
+          "delayMedian": 4.1,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 41002,
+              "pull": 0,
+              "t": "2026-09-19T20:00:13.2430000"
+            },
+            {
+              "aid": 41002,
+              "pull": 1,
+              "t": "2026-09-19T20:00:39.7290000"
+            },
+            {
+              "aid": 41002,
+              "pull": 2,
+              "t": "2026-09-19T20:01:06.2150000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=41002 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 41003,
+          "delayMad": 0,
+          "delayMedian": 4.1,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 41003,
+              "pull": 0,
+              "t": "2026-09-19T20:00:19.3630000"
+            },
+            {
+              "aid": 41003,
+              "pull": 1,
+              "t": "2026-09-19T20:00:45.8490000"
+            },
+            {
+              "aid": 41003,
+              "pull": 2,
+              "t": "2026-09-19T20:01:12.3350000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=41003 support=3/3"
+      },
+      {
+        "kind": "PrimaryDeath",
+        "summary": "DIE+ in 1/3 pulls"
+      }
+    ],
+    "phases": [
+      {
+        "activate": [],
+        "firstStep": 0,
+        "index": 0,
+        "kind": "Death",
+        "name": "Phase0",
+        "stepCount": 3
+      }
+    ],
+    "pullCount": 3,
+    "steps": [
+      {
+        "activate": [
+          "Ability41001"
+        ],
+        "aid": 41001,
+        "castTime": 2,
+        "deactivate": [
+          "Ability41001"
+        ],
+        "delay": 6.1,
+        "id": "0x00000000",
+        "kind": "Cast",
+        "name": "Ability41001",
+        "of": [
+          41001
+        ],
+        "support": 3,
+        "timingMad": 0
+      },
+      {
+        "activate": [
+          "Ability41002"
+        ],
+        "aid": 41002,
+        "castTime": 2,
+        "deactivate": [
+          "Ability41002"
+        ],
+        "delay": 4.1,
+        "id": "0x00010000",
+        "kind": "Cast",
+        "name": "Ability41002",
+        "of": [
+          41002
+        ],
+        "support": 3,
+        "timingMad": 0
+      },
+      {
+        "activate": [
+          "Ability41003"
+        ],
+        "aid": 41003,
+        "castTime": 2,
+        "deactivate": [
+          "Ability41003"
+        ],
+        "delay": 4.1,
+        "id": "0x00020000",
+        "kind": "Cast",
+        "name": "Ability41003",
+        "of": [
+          41003
+        ],
+        "support": 3,
+        "timingMad": 0
+      }
+    ]
+  }
+}

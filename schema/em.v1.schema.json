@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bossmodforge.local/schema/em.v1.schema.json",
+  "title": "BossModForge Encounter Model v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "encounter",
+    "sources",
+    "pulls",
+    "participants",
+    "abilities",
+    "statuses",
+    "tethers",
+    "icons",
+    "enums",
+    "arena",
+    "review",
+    "overrides"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "encounter": { "$ref": "#/$defs/encounterInfo" },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/sourceInfo" } },
+    "pulls": { "type": "array", "items": { "$ref": "#/$defs/pullSummary" } },
+    "participants": { "type": "array", "items": { "$ref": "#/$defs/participantModel" } },
+    "abilities": { "type": "array", "items": { "$ref": "#/$defs/abilityModel" } },
+    "statuses": { "type": "array", "items": { "$ref": "#/$defs/statusModel" } },
+    "tethers": { "type": "array", "items": { "$ref": "#/$defs/tetherModel" } },
+    "icons": { "type": "array", "items": { "$ref": "#/$defs/iconModel" } },
+    "enums": { "$ref": "#/$defs/enumNames" },
+    "arena": { "$ref": "#/$defs/arenaModel" },
+    "review": { "type": "array", "items": { "$ref": "#/$defs/reviewItem" } },
+    "overrides": { "$ref": "#/$defs/overrides" },
+    "timeline": { "$ref": "#/$defs/timelineModel" }
+  },
+  "$defs": {
+    "uint": { "type": "integer", "minimum": 0, "maximum": 4294967295 },
+    "ushort": { "type": "integer", "minimum": 0, "maximum": 65535 },
+    "confidenceBand": { "type": "string", "enum": ["High", "Medium", "Low"] },
+    "reviewSeverity": { "type": "string", "enum": ["High", "Medium", "Low"] },
+    "idMap": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "propertyNames": { "pattern": "^[0-9]+$" }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "band", "reasons"],
+      "properties": {
+        "score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "band": { "$ref": "#/$defs/confidenceBand" },
+        "reasons": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "summary"],
+      "properties": {
+        "kind": { "type": "string" },
+        "summary": { "type": "string" },
+        "data": true
+      }
+    },
+    "reviewItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "severity", "subject", "question", "suggested"],
+      "properties": {
+        "id": { "type": "string" },
+        "severity": { "$ref": "#/$defs/reviewSeverity" },
+        "subject": { "type": "string" },
+        "question": { "type": "string" },
+        "suggested": { "type": "array", "items": { "type": "string" } },
+        "resolution": { "type": "string" }
+      }
+    },
+    "encounterInfo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zone", "cfcId", "primaryOid", "bossName", "bossNameId", "moduleName", "namespace"],
+      "properties": {
+        "zone": { "$ref": "#/$defs/ushort" },
+        "cfcId": { "$ref": "#/$defs/ushort" },
+        "dutyName": { "type": ["string", "null"] },
+        "primaryOid": { "$ref": "#/$defs/uint" },
+        "bossName": { "type": "string" },
+        "bossNameId": { "$ref": "#/$defs/uint" },
+        "moduleName": { "type": "string" },
+        "namespace": { "type": "string" }
+      }
+    },
+    "sourceInfo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "version", "gameVersion", "start", "end"],
+      "properties": {
+        "path": { "type": "string" },
+        "sha256": { "type": "string" },
+        "version": { "type": "integer" },
+        "gameVersion": { "type": "string" },
+        "start": { "type": "string" },
+        "end": { "type": "string" }
+      }
+    },
+    "pullSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index", "source", "start", "end", "outcome", "durationSeconds", "confidence"],
+      "properties": {
+        "index": { "type": "integer" },
+        "source": { "type": "string" },
+        "start": { "type": "string" },
+        "end": { "type": "string" },
+        "outcome": { "type": "string" },
+        "durationSeconds": { "type": "number" },
+        "confidence": { "$ref": "#/$defs/confidence" }
+      }
+    },
+    "participantModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["oid", "enumName", "name", "nameId", "type", "role", "hitboxRadius", "instanceCount", "spawnsDuringFight", "confidence", "evidence"],
+      "properties": {
+        "oid": { "$ref": "#/$defs/uint" },
+        "enumName": { "type": "string" },
+        "name": { "type": "string" },
+        "nameId": { "$ref": "#/$defs/uint" },
+        "type": { "type": "string" },
+        "role": { "type": "string" },
+        "hitboxRadius": { "type": "number" },
+        "instanceCount": { "type": "integer" },
+        "spawnsDuringFight": { "type": "boolean" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+        "comment": { "type": "string" }
+      }
+    },
+    "abilityModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceOid", "actionId", "actionType", "enumName", "name", "hasCastBar", "castTime", "interruptible", "instanceCount", "class", "confidence", "evidence"],
+      "properties": {
+        "sourceOid": { "$ref": "#/$defs/uint" },
+        "actionId": { "$ref": "#/$defs/uint" },
+        "actionType": { "type": "string" },
+        "enumName": { "type": "string" },
+        "name": { "type": "string" },
+        "hasCastBar": { "type": "boolean" },
+        "castTime": { "type": "number" },
+        "interruptible": { "type": "boolean" },
+        "instanceCount": { "type": "integer" },
+        "class": { "type": "string" },
+        "shape": { "$ref": "#/$defs/shape" },
+        "shapeFit": { "$ref": "#/$defs/shapeFitSummary" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+        "comment": { "type": "string" }
+      }
+    },
+    "statusModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statusId", "enumName", "name", "applications"],
+      "properties": {
+        "statusId": { "$ref": "#/$defs/uint" },
+        "enumName": { "type": "string" },
+        "name": { "type": "string" },
+        "applications": { "type": "integer" }
+      }
+    },
+    "tetherModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tetherId", "enumName", "count"],
+      "properties": {
+        "tetherId": { "$ref": "#/$defs/uint" },
+        "enumName": { "type": "string" },
+        "count": { "type": "integer" }
+      }
+    },
+    "iconModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["iconId", "enumName", "count"],
+      "properties": {
+        "iconId": { "$ref": "#/$defs/uint" },
+        "enumName": { "type": "string" },
+        "count": { "type": "integer" }
+      }
+    },
+    "enumNames": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["oid", "aid", "sid", "tetherId", "iconId"],
+      "properties": {
+        "oid": { "$ref": "#/$defs/idMap" },
+        "aid": { "$ref": "#/$defs/idMap" },
+        "sid": { "$ref": "#/$defs/idMap" },
+        "tetherId": { "$ref": "#/$defs/idMap" },
+        "iconId": { "$ref": "#/$defs/idMap" }
+      }
+    },
+    "arenaModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "centerX", "centerZ", "radius", "confidence"],
+      "properties": {
+        "kind": { "type": "string" },
+        "centerX": { "type": "number" },
+        "centerZ": { "type": "number" },
+        "radius": { "type": "number" },
+        "halfWidth": { "type": "number" },
+        "halfHeight": { "type": "number" },
+        "vertices": { "type": "array", "items": { "$ref": "#/$defs/pointModel" } },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } }
+      }
+    },
+    "pointModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "z"],
+      "properties": {
+        "x": { "type": "number" },
+        "z": { "type": "number" }
+      }
+    },
+    "shape": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "radius", "innerRadius", "halfAngleDeg", "halfWidth", "lengthBack", "origin", "direction"],
+      "properties": {
+        "kind": { "type": "string" },
+        "radius": { "type": "number" },
+        "innerRadius": { "type": "number" },
+        "halfAngleDeg": { "type": "number" },
+        "halfWidth": { "type": "number" },
+        "lengthBack": { "type": "number" },
+        "origin": { "type": "string" },
+        "direction": { "type": "string" }
+      }
+    },
+    "shapeFitSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "fitConsistency", "minMargin", "lagSeconds", "instances"],
+      "properties": {
+        "score": { "type": "number" },
+        "fitConsistency": { "type": "number" },
+        "minMargin": { "type": "number" },
+        "lagSeconds": { "type": "number" },
+        "instances": { "type": "integer" }
+      }
+    },
+    "overrides": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["values"],
+      "properties": {
+        "values": { "type": "object" }
+      }
+    },
+    "timelineModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phases", "steps", "pullCount", "confidence", "evidence"],
+      "properties": {
+        "phases": { "type": "array", "items": { "$ref": "#/$defs/phaseModel" } },
+        "steps": { "type": "array", "items": { "$ref": "#/$defs/timelineStep" } },
+        "loop": { "$ref": "#/$defs/loopModel" },
+        "pullCount": { "type": "integer" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } }
+      }
+    },
+    "phaseModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index", "name", "kind", "firstStep", "stepCount", "activate"],
+      "properties": {
+        "index": { "type": "integer" },
+        "name": { "type": "string" },
+        "kind": { "type": "string" },
+        "hpThreshold": { "type": ["number", "null"] },
+        "firstStep": { "type": "integer" },
+        "stepCount": { "type": "integer" },
+        "activate": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "timelineStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "delay", "castTime", "timingMad", "support", "of", "name", "activate", "deactivate"],
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "type": "string" },
+        "aid": { "$ref": "#/$defs/uint" },
+        "delay": { "type": "number" },
+        "castTime": { "type": "number" },
+        "timingMad": { "type": "number" },
+        "support": { "type": "integer" },
+        "of": { "type": "array", "items": { "$ref": "#/$defs/uint" } },
+        "name": { "type": "string" },
+        "activate": { "type": "array", "items": { "type": "string" } },
+        "deactivate": { "type": "array", "items": { "type": "string" } },
+        "review": { "type": ["string", "null"] },
+        "targetable": { "type": ["boolean", "null"] }
+      }
+    },
+    "loopModel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["startStep", "length", "repeats", "trailingPartial", "entryDelay"],
+      "properties": {
+        "startStep": { "type": "integer" },
+        "length": { "type": "integer" },
+        "repeats": { "type": "integer" },
+        "trailingPartial": { "type": "integer" },
+        "entryDelay": { "type": "number" }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>forge</AssemblyName>
+    <RootNamespace>BossModForge.Cli</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Lumina" Version="5.8.0" />
+    <PackageReference Include="Lumina.Excel" Version="7.2.3" />
+    <PackageReference Include="System.CommandLine" Version="2.0.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BossModForge.Core\BossModForge.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\flavors\*.json" Link="flavors\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- ReplayValidator host template: copied into a BossMod checkout at runtime
+         (BossmodBuildValidator). It references BossMod and cannot compile here. -->
+    <Compile Remove="ReplayValidator\**\*.cs" />
+    <EmbeddedResource Include="ReplayValidator\ForgeReplayValidator.csproj" LogicalName="BossModForge.Cli.ReplayValidator.ForgeReplayValidator.csproj" />
+    <EmbeddedResource Include="ReplayValidator\Program.cs" LogicalName="BossModForge.Cli.ReplayValidator.Program.cs" />
+  </ItemGroup>
+</Project>

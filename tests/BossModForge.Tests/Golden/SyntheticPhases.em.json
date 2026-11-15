@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 1,
+  "abilities": [
+    {
+      "actionId": 40201,
+      "actionType": "Spell",
+      "castTime": 4,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "A",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 6,
+      "interruptible": false,
+      "name": "A",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 6,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40202,
+      "actionType": "Spell",
+      "castTime": 4,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "B",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 6,
+      "interruptible": false,
+      "name": "B",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 6,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40203,
+      "actionType": "Spell",
+      "castTime": 5,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "C",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 6,
+      "interruptible": false,
+      "name": "C",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 6,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40204,
+      "actionType": "Spell",
+      "castTime": 4,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "D",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 6,
+      "interruptible": false,
+      "name": "D",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 6,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17476
+    }
+  ],
+  "arena": {
+    "centerX": 100,
+    "centerZ": 100,
+    "confidence": {
+      "band": "Low",
+      "reasons": [
+        "insufficient samples"
+      ],
+      "score": 0.3
+    },
+    "evidence": [
+      {
+        "kind": "Bounds",
+        "summary": "insufficient samples"
+      }
+    ],
+    "halfHeight": 0,
+    "halfWidth": 0,
+    "kind": "Circle",
+    "radius": 20,
+    "vertices": []
+  },
+  "encounter": {
+    "bossName": "Test Boss",
+    "bossNameId": 12716,
+    "cfcId": 826,
+    "moduleName": "SyntheticPhases",
+    "namespace": "BossMod.Forge.SyntheticPhases",
+    "primaryOid": 17476,
+    "zone": 1234
+  },
+  "enums": {
+    "aid": {
+      "40201": "A",
+      "40202": "B",
+      "40203": "C",
+      "40204": "D"
+    },
+    "iconId": {},
+    "oid": {
+      "17476": "Boss"
+    },
+    "sid": {},
+    "tetherId": {}
+  },
+  "icons": [],
+  "overrides": {
+    "values": {}
+  },
+  "participants": [
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [
+          "OID matches pull primary"
+        ],
+        "score": 0.9
+      },
+      "enumName": "Boss",
+      "evidence": [
+        {
+          "kind": "Role",
+          "summary": "Boss"
+        }
+      ],
+      "hitboxRadius": 5,
+      "instanceCount": 1,
+      "name": "Test Boss",
+      "nameId": 12716,
+      "oid": 17476,
+      "role": "Boss",
+      "spawnsDuringFight": false,
+      "type": "Enemy"
+    }
+  ],
+  "pulls": [
+    {
+      "confidence": {
+        "band": "Medium",
+        "reasons": [
+          "combat-gap end"
+        ],
+        "score": 0.7
+      },
+      "durationSeconds": 63.155,
+      "end": "2026-09-20T04:01:04.1580000",
+      "index": 0,
+      "outcome": "Wipe",
+      "source": "SyntheticPhases.log",
+      "start": "2026-09-20T04:00:01.0030000"
+    },
+    {
+      "confidence": {
+        "band": "Medium",
+        "reasons": [
+          "combat-gap end"
+        ],
+        "score": 0.7
+      },
+      "durationSeconds": 63.155,
+      "end": "2026-09-20T04:02:08.3160000",
+      "index": 1,
+      "outcome": "Wipe",
+      "source": "SyntheticPhases.log",
+      "start": "2026-09-20T04:01:05.1610000"
+    },
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "durationSeconds": 63.155,
+      "end": "2026-09-20T04:03:12.4740000",
+      "index": 2,
+      "outcome": "Kill",
+      "source": "SyntheticPhases.log",
+      "start": "2026-09-20T04:02:09.3190000"
+    }
+  ],
+  "review": [
+    {
+      "id": "R1",
+      "question": "HP 50 % phase split inferred from casting stop",
+      "severity": "Medium",
+      "subject": "timeline",
+      "suggested": []
+    }
+  ],
+  "sources": [
+    {
+      "end": "2026-09-20T04:03:12.4740000",
+      "gameVersion": "2026.08.20.0000.0000",
+      "path": "SyntheticPhases.log",
+      "sha256": "",
+      "start": "2026-09-20T04:00:00.0000000",
+      "version": 24
+    }
+  ],
+  "statuses": [],
+  "tethers": [],
+  "timeline": {
+    "confidence": {
+      "band": "High",
+      "reasons": [],
+      "score": 1
+    },
+    "evidence": [
+      {
+        "data": {
+          "aid": 40201,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40201,
+              "pull": 0,
+              "t": "2026-09-20T04:00:03.0090000"
+            },
+            {
+              "aid": 40201,
+              "pull": 1,
+              "t": "2026-09-20T04:01:07.1670000"
+            },
+            {
+              "aid": 40201,
+              "pull": 2,
+              "t": "2026-09-20T04:02:11.3250000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40201 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40202,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40202,
+              "pull": 0,
+              "t": "2026-09-20T04:00:09.0270000"
+            },
+            {
+              "aid": 40202,
+              "pull": 1,
+              "t": "2026-09-20T04:01:13.1850000"
+            },
+            {
+              "aid": 40202,
+              "pull": 2,
+              "t": "2026-09-20T04:02:17.3430000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40202 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40201,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40201,
+              "pull": 0,
+              "t": "2026-09-20T04:00:15.0450000"
+            },
+            {
+              "aid": 40201,
+              "pull": 1,
+              "t": "2026-09-20T04:01:19.2030000"
+            },
+            {
+              "aid": 40201,
+              "pull": 2,
+              "t": "2026-09-20T04:02:23.3610000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40201 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40202,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40202,
+              "pull": 0,
+              "t": "2026-09-20T04:00:21.0630000"
+            },
+            {
+              "aid": 40202,
+              "pull": 1,
+              "t": "2026-09-20T04:01:25.2210000"
+            },
+            {
+              "aid": 40202,
+              "pull": 2,
+              "t": "2026-09-20T04:02:29.3790000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40202 support=3/3"
+      },
+      {
+        "kind": "Loop",
+        "summary": "start=0 length=2 repeats=2 trailing=0 entry=2.0"
+      },
+      {
+        "kind": "LoopIgnored",
+        "summary": "phase 0 loop ignored (not last phase)"
+      },
+      {
+        "data": {
+          "aid": 0,
+          "delayMad": 0,
+          "delayMedian": 25.1,
+          "kind": "Targetable",
+          "members": [
+            {
+              "aid": 0,
+              "pull": 0,
+              "t": "2026-09-20T04:00:26.0780000"
+            },
+            {
+              "aid": 0,
+              "pull": 1,
+              "t": "2026-09-20T04:01:30.2360000"
+            },
+            {
+              "aid": 0,
+              "pull": 2,
+              "t": "2026-09-20T04:02:34.3940000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Targetable aid=0 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 0,
+          "delayMad": 0,
+          "delayMedian": 12,
+          "kind": "Targetable",
+          "members": [
+            {
+              "aid": 0,
+              "pull": 0,
+              "t": "2026-09-20T04:00:38.0800000"
+            },
+            {
+              "aid": 0,
+              "pull": 1,
+              "t": "2026-09-20T04:01:42.2380000"
+            },
+            {
+              "aid": 0,
+              "pull": 2,
+              "t": "2026-09-20T04:02:46.3960000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Targetable aid=0 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40203,
+          "delayMad": 0,
+          "delayMedian": 1,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40203,
+              "pull": 0,
+              "t": "2026-09-20T04:00:39.0830000"
+            },
+            {
+              "aid": 40203,
+              "pull": 1,
+              "t": "2026-09-20T04:01:43.2410000"
+            },
+            {
+              "aid": 40203,
+              "pull": 2,
+              "t": "2026-09-20T04:02:47.3990000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40203 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40204,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40204,
+              "pull": 0,
+              "t": "2026-09-20T04:00:46.1040000"
+            },
+            {
+              "aid": 40204,
+              "pull": 1,
+              "t": "2026-09-20T04:01:50.2620000"
+            },
+            {
+              "aid": 40204,
+              "pull": 2,
+              "t": "2026-09-20T04:02:54.4200000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40204 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40203,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40203,
+              "pull": 0,
+              "t": "2026-09-20T04:00:52.1220000"
+            },
+            {
+              "aid": 40203,
+              "pull": 1,
+              "t": "2026-09-20T04:01:56.2800000"
+            },
+            {
+              "aid": 40203,
+              "pull": 2,
+              "t": "2026-09-20T04:03:00.4380000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40203 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40204,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40204,
+              "pull": 0,
+              "t": "2026-09-20T04:00:59.1430000"
+            },
+            {
+              "aid": 40204,
+              "pull": 1,
+              "t": "2026-09-20T04:02:03.3010000"
+            },
+            {
+              "aid": 40204,
+              "pull": 2,
+              "t": "2026-09-20T04:03:07.4590000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40204 support=3/3"
+      },
+      {
+        "kind": "Loop",
+        "summary": "start=2 length=2 repeats=2 trailing=0 entry=1.0"
+      },
+      {
+        "kind": "HpThreshold",
+        "summary": "HP 50 % casting-stop / untargetable in 3/3 pulls"
+      },
+      {
+        "kind": "PrimaryDeath",
+        "summary": "DIE+ in 1/3 pulls"
+      }
+    ],
+    "loop": {
+      "entryDelay": 1,
+      "length": 2,
+      "repeats": 2,
+      "startStep": 6,
+      "trailingPartial": 0
+    },
+    "phases": [
+      {
+        "activate": [],
+        "firstStep": 0,
+        "hpThreshold": 0.5,
+        "index": 0,
+        "kind": "HpThreshold",
+        "name": "Phase0",
+        "stepCount": 4
+      },
+      {
+        "activate": [
+          "C",
+          "D"
+        ],
+        "firstStep": 4,
+        "index": 1,
+        "kind": "Death",
+        "name": "Phase1",
+        "stepCount": 4
+      }
+    ],
+    "pullCount": 3,
+    "steps": [
+      {
+        "activate": [
+          "A"
+        ],
+        "aid": 40201,
+        "castTime": 4,
+        "deactivate": [],
+        "delay": 2,
+        "id": "0x00000000",
+        "kind": "Cast",
+        "name": "A",
+        "of": [
+          40201
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [
+          "B"
+        ],
+        "aid": 40202,
+        "castTime": 4,
+        "deactivate": [],
+        "delay": 2,
+        "id": "0x00010000",
+        "kind": "Cast",
+        "name": "B",
+        "of": [
+          40202
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40201,
+        "castTime": 4,
+        "deactivate": [
+          "A"
+        ],
+        "delay": 2,
+        "id": "0x00020000",
+        "kind": "Cast",
+        "name": "A",
+        "of": [
+          40201
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40202,
+        "castTime": 4,
+        "deactivate": [
+          "B"
+        ],
+        "delay": 2,
+        "id": "0x00030000",
+        "kind": "Cast",
+        "name": "B",
+        "of": [
+          40202
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "castTime": 0,
+        "deactivate": [],
+        "delay": 25.1,
+        "id": "0x01000000",
+        "kind": "Targetable",
+        "name": "Boss disappears",
+        "of": [
+          0
+        ],
+        "support": 3,
+        "targetable": false,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "castTime": 0,
+        "deactivate": [],
+        "delay": 12,
+        "id": "0x01010000",
+        "kind": "Targetable",
+        "name": "Boss reappears",
+        "of": [
+          0
+        ],
+        "support": 3,
+        "targetable": true,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40203,
+        "castTime": 5,
+        "deactivate": [],
+        "delay": 2,
+        "id": "0x01020000",
+        "kind": "Cast",
+        "name": "C",
+        "of": [
+          40203
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40204,
+        "castTime": 4,
+        "deactivate": [],
+        "delay": 2,
+        "id": "0x01030000",
+        "kind": "Cast",
+        "name": "D",
+        "of": [
+          40204
+        ],
+        "support": 6,
+        "timingMad": 0
+      }
+    ]
+  }
+}

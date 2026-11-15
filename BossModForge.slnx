@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="src/BossModForge.Core/BossModForge.Core.csproj" />
+  <Project Path="src/BossModForge.Cli/BossModForge.Cli.csproj" />
+  <Project Path="tests/BossModForge.Tests/BossModForge.Tests.csproj" />
+  <Project Path="tests/BossModForge.UpstreamShim/BossModForge.UpstreamShim.csproj" />
+  <Project Path="tests/BossModForge.GoldenCompile/BossModForge.GoldenCompile.csproj" />
+</Solution>

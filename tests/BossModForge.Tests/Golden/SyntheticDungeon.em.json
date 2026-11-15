@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "abilities": [
+    {
+      "actionId": 40001,
+      "actionType": "Spell",
+      "castTime": 5,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Ability40001",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 3,
+      "interruptible": false,
+      "name": "Ability40001",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 3,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17185
+    }
+  ],
+  "arena": {
+    "centerX": 100,
+    "centerZ": 100,
+    "confidence": {
+      "band": "Low",
+      "reasons": [
+        "insufficient samples"
+      ],
+      "score": 0.3
+    },
+    "evidence": [
+      {
+        "kind": "Bounds",
+        "summary": "insufficient samples"
+      }
+    ],
+    "halfHeight": 0,
+    "halfWidth": 0,
+    "kind": "Circle",
+    "radius": 20,
+    "vertices": []
+  },
+  "encounter": {
+    "bossName": "Test Boss",
+    "bossNameId": 12716,
+    "cfcId": 826,
+    "moduleName": "SyntheticDungeon",
+    "namespace": "BossMod.Forge.SyntheticDungeon",
+    "primaryOid": 17185,
+    "zone": 1234
+  },
+  "enums": {
+    "aid": {
+      "40001": "Ability40001"
+    },
+    "iconId": {
+      "50": "Icon50"
+    },
+    "oid": {
+      "17185": "Boss",
+      "9020": "Helper"
+    },
+    "sid": {
+      "1234": "Status1234"
+    },
+    "tetherId": {
+      "7": "Tether7"
+    }
+  },
+  "icons": [
+    {
+      "count": 3,
+      "enumName": "Icon50",
+      "iconId": 50
+    }
+  ],
+  "overrides": {
+    "values": {}
+  },
+  "participants": [
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [
+          "Helper type or OID 0x233C"
+        ],
+        "score": 0.9
+      },
+      "enumName": "Helper",
+      "evidence": [
+        {
+          "kind": "Role",
+          "summary": "Helper"
+        }
+      ],
+      "hitboxRadius": 0.5,
+      "instanceCount": 1,
+      "name": "Helper",
+      "nameId": 0,
+      "oid": 9020,
+      "role": "Helper",
+      "spawnsDuringFight": false,
+      "type": "Helper"
+    },
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [
+          "OID matches pull primary"
+        ],
+        "score": 0.9
+      },
+      "enumName": "Boss",
+      "evidence": [
+        {
+          "kind": "Role",
+          "summary": "Boss"
+        }
+      ],
+      "hitboxRadius": 5,
+      "instanceCount": 1,
+      "name": "Test Boss",
+      "nameId": 12716,
+      "oid": 17185,
+      "role": "Boss",
+      "spawnsDuringFight": false,
+      "type": "Enemy"
+    }
+  ],
+  "pulls": [
+    {
+      "confidence": {
+        "band": "Medium",
+        "reasons": [
+          "combat-gap end"
+        ],
+        "score": 0.7
+      },
+      "durationSeconds": 7.021,
+      "end": "2026-09-19T20:00:08.0240000",
+      "index": 0,
+      "outcome": "Wipe",
+      "source": "SyntheticDungeon.log",
+      "start": "2026-09-19T20:00:01.0030000"
+    },
+    {
+      "confidence": {
+        "band": "Medium",
+        "reasons": [
+          "combat-gap end"
+        ],
+        "score": 0.7
+      },
+      "durationSeconds": 7.021,
+      "end": "2026-09-19T20:00:16.0480000",
+      "index": 1,
+      "outcome": "Wipe",
+      "source": "SyntheticDungeon.log",
+      "start": "2026-09-19T20:00:09.0270000"
+    },
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "durationSeconds": 7.021,
+      "end": "2026-09-19T20:00:24.0720000",
+      "index": 2,
+      "outcome": "Kill",
+      "source": "SyntheticDungeon.log",
+      "start": "2026-09-19T20:00:17.0510000"
+    }
+  ],
+  "review": [],
+  "sources": [
+    {
+      "end": "2026-09-19T20:00:24.0720000",
+      "gameVersion": "2026.08.20.0000.0000",
+      "path": "SyntheticDungeon.log",
+      "sha256": "",
+      "start": "2026-09-19T20:00:00.0000000",
+      "version": 24
+    }
+  ],
+  "statuses": [
+    {
+      "applications": 3,
+      "enumName": "Status1234",
+      "name": "Status1234",
+      "statusId": 1234
+    }
+  ],
+  "tethers": [
+    {
+      "count": 3,
+      "enumName": "Tether7",
+      "tetherId": 7
+    }
+  ],
+  "timeline": {
+    "confidence": {
+      "band": "High",
+      "reasons": [],
+      "score": 1
+    },
+    "evidence": [
+      {
+        "data": {
+          "aid": 40001,
+          "delayMad": 0,
+          "delayMedian": 0,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40001,
+              "pull": 0,
+              "t": "2026-09-19T20:00:01.0030000"
+            },
+            {
+              "aid": 40001,
+              "pull": 1,
+              "t": "2026-09-19T20:00:09.0270000"
+            },
+            {
+              "aid": 40001,
+              "pull": 2,
+              "t": "2026-09-19T20:00:17.0510000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40001 support=3/3"
+      },
+      {
+        "kind": "PrimaryDeath",
+        "summary": "DIE+ in 1/3 pulls"
+      }
+    ],
+    "phases": [
+      {
+        "activate": [],
+        "firstStep": 0,
+        "index": 0,
+        "kind": "Death",
+        "name": "Phase0",
+        "stepCount": 1
+      }
+    ],
+    "pullCount": 3,
+    "steps": [
+      {
+        "activate": [
+          "Ability40001"
+        ],
+        "aid": 40001,
+        "castTime": 5,
+        "deactivate": [
+          "Ability40001"
+        ],
+        "delay": 0,
+        "id": "0x00000000",
+        "kind": "Cast",
+        "name": "Ability40001",
+        "of": [
+          40001
+        ],
+        "support": 3,
+        "timingMad": 0
+      }
+    ]
+  }
+}

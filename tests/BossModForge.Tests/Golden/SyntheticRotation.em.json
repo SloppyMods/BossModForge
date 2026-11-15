@@ -1,0 +1,1283 @@
+{
+  "schemaVersion": 1,
+  "abilities": [
+    {
+      "actionId": 40101,
+      "actionType": "Spell",
+      "castTime": 5,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Opener",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 3,
+      "interruptible": false,
+      "name": "Opener",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 3,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40102,
+      "actionType": "Spell",
+      "castTime": 3,
+      "class": "HiddenAOE",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Circle",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "Circle",
+            "minMargin": 3,
+            "priorMatch": 1,
+            "radius": 6,
+            "rawKind": "Circle",
+            "rawRadius": 6.5
+          },
+          "kind": "ShapeFit",
+          "summary": "Circle score=0.900 r=6"
+        },
+        {
+          "data": [
+            {
+              "consistency": 1,
+              "kind": "Circle",
+              "score": 0.9
+            }
+          ],
+          "kind": "ShapeFit",
+          "summary": "candidates"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "HA-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 8,
+      "interruptible": false,
+      "name": "Circle",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "Circle",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 6
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 8,
+        "lagSeconds": 0,
+        "minMargin": 3,
+        "score": 0.9
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40103,
+      "actionType": "Spell",
+      "castTime": 4,
+      "class": "TelegraphedAOE",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Cone",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 45,
+            "kind": "Cone",
+            "minMargin": 90,
+            "priorMatch": 1,
+            "radius": 20,
+            "rawKind": "Cone",
+            "rawRadius": 5
+          },
+          "kind": "ShapeFit",
+          "summary": "Cone score=0.900 r=20"
+        },
+        {
+          "data": [
+            {
+              "consistency": 1,
+              "kind": "Cone",
+              "score": 0.9
+            }
+          ],
+          "kind": "ShapeFit",
+          "summary": "candidates"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "TA-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 9,
+      "interruptible": false,
+      "name": "Cone",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 45,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "Cone",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 20
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 9,
+        "lagSeconds": 0,
+        "minMargin": 90,
+        "score": 0.9
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40104,
+      "actionType": "Spell",
+      "castTime": 4,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Raidwide2",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 7,
+      "interruptible": false,
+      "name": "Raidwide2",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 7,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40105,
+      "actionType": "Spell",
+      "castTime": 3,
+      "class": "HiddenAOE",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Circle2",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "Circle",
+            "minMargin": 3,
+            "priorMatch": 1,
+            "radius": 6,
+            "rawKind": "Circle",
+            "rawRadius": 6.5
+          },
+          "kind": "ShapeFit",
+          "summary": "Circle score=0.900 r=6"
+        },
+        {
+          "data": [
+            {
+              "consistency": 1,
+              "kind": "Circle",
+              "score": 0.9
+            }
+          ],
+          "kind": "ShapeFit",
+          "summary": "candidates"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "HA-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 6,
+      "interruptible": false,
+      "name": "Circle2",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "Circle",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 6
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 6,
+        "lagSeconds": 0,
+        "minMargin": 3,
+        "score": 0.9
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40106,
+      "actionType": "Spell",
+      "castTime": 4,
+      "class": "Tankbuster",
+      "confidence": {
+        "band": "Low",
+        "reasons": [],
+        "score": 0.3
+      },
+      "enumName": "Buster",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "SingleTarget",
+            "minMargin": 999,
+            "priorMatch": 1,
+            "radius": 0,
+            "rawKind": "SingleTarget",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "SingleTarget score=0.300 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "TB-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 6,
+      "interruptible": false,
+      "name": "Buster",
+      "shape": {
+        "direction": "ToTarget",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "SingleTarget",
+        "lengthBack": 0,
+        "origin": "TargetActor",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 6,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 0.3
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40107,
+      "actionType": "Spell",
+      "castTime": 5,
+      "class": "Raidwide",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "Raidwide3",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 0,
+            "kind": "RaidwideNoShape",
+            "minMargin": 999,
+            "priorMatch": 0,
+            "radius": 0,
+            "rawKind": "RaidwideNoShape",
+            "rawRadius": 0
+          },
+          "kind": "ShapeFit",
+          "summary": "RaidwideNoShape score=1.000 r=0"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "RW-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 6,
+      "interruptible": false,
+      "name": "Raidwide3",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 0,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "RaidwideNoShape",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 0
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 6,
+        "lagSeconds": 0,
+        "minMargin": 999,
+        "score": 1
+      },
+      "sourceOid": 17476
+    },
+    {
+      "actionId": 40108,
+      "actionType": "Spell",
+      "castTime": 4,
+      "class": "TelegraphedAOE",
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "enumName": "ConeAlt",
+      "evidence": [
+        {
+          "data": {
+            "consistency": 1,
+            "halfAngle": 45,
+            "kind": "Cone",
+            "minMargin": 90,
+            "priorMatch": 1,
+            "radius": 20,
+            "rawKind": "Cone",
+            "rawRadius": 5
+          },
+          "kind": "ShapeFit",
+          "summary": "Cone score=0.900 r=20"
+        },
+        {
+          "data": [
+            {
+              "consistency": 1,
+              "kind": "Cone",
+              "score": 0.9
+            }
+          ],
+          "kind": "ShapeFit",
+          "summary": "candidates"
+        },
+        {
+          "kind": "MechanicRule",
+          "summary": "TA-1"
+        },
+        {
+          "kind": "BaitRule",
+          "summary": "nearest"
+        }
+      ],
+      "hasCastBar": true,
+      "instanceCount": 1,
+      "interruptible": false,
+      "name": "ConeAlt",
+      "shape": {
+        "direction": "SourceRotation",
+        "halfAngleDeg": 45,
+        "halfWidth": 0,
+        "innerRadius": 0,
+        "kind": "Cone",
+        "lengthBack": 0,
+        "origin": "Source",
+        "radius": 20
+      },
+      "shapeFit": {
+        "fitConsistency": 1,
+        "instances": 1,
+        "lagSeconds": 0,
+        "minMargin": 90,
+        "score": 0.9
+      },
+      "sourceOid": 17476
+    }
+  ],
+  "arena": {
+    "centerX": 100,
+    "centerZ": 100,
+    "confidence": {
+      "band": "Low",
+      "reasons": [
+        "insufficient samples"
+      ],
+      "score": 0.3
+    },
+    "evidence": [
+      {
+        "kind": "Bounds",
+        "summary": "insufficient samples"
+      }
+    ],
+    "halfHeight": 0,
+    "halfWidth": 0,
+    "kind": "Circle",
+    "radius": 20,
+    "vertices": []
+  },
+  "encounter": {
+    "bossName": "Test Boss",
+    "bossNameId": 12716,
+    "cfcId": 826,
+    "moduleName": "SyntheticRotation",
+    "namespace": "BossMod.Forge.SyntheticRotation",
+    "primaryOid": 17476,
+    "zone": 1234
+  },
+  "enums": {
+    "aid": {
+      "40101": "Opener",
+      "40102": "Circle",
+      "40103": "Cone",
+      "40104": "Raidwide2",
+      "40105": "Circle2",
+      "40106": "Buster",
+      "40107": "Raidwide3",
+      "40108": "ConeAlt"
+    },
+    "iconId": {},
+    "oid": {
+      "17476": "Boss"
+    },
+    "sid": {},
+    "tetherId": {}
+  },
+  "icons": [],
+  "overrides": {
+    "values": {}
+  },
+  "participants": [
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [
+          "OID matches pull primary"
+        ],
+        "score": 0.9
+      },
+      "enumName": "Boss",
+      "evidence": [
+        {
+          "kind": "Role",
+          "summary": "Boss"
+        }
+      ],
+      "hitboxRadius": 5,
+      "instanceCount": 1,
+      "name": "Test Boss",
+      "nameId": 12716,
+      "oid": 17476,
+      "role": "Boss",
+      "spawnsDuringFight": false,
+      "type": "Enemy"
+    }
+  ],
+  "pulls": [
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "durationSeconds": 152.031,
+      "end": "2026-09-20T03:02:33.0340000",
+      "index": 0,
+      "outcome": "Kill",
+      "source": "SyntheticRotation.log",
+      "start": "2026-09-20T03:00:01.0030000"
+    },
+    {
+      "confidence": {
+        "band": "Medium",
+        "reasons": [
+          "combat-gap end"
+        ],
+        "score": 0.7
+      },
+      "durationSeconds": 134.487,
+      "end": "2026-09-20T03:04:49.5270000",
+      "index": 1,
+      "outcome": "Wipe",
+      "source": "SyntheticRotation.log",
+      "start": "2026-09-20T03:02:35.0400000"
+    },
+    {
+      "confidence": {
+        "band": "High",
+        "reasons": [],
+        "score": 0.9
+      },
+      "durationSeconds": 125.477,
+      "end": "2026-09-20T03:06:56.0070000",
+      "index": 2,
+      "outcome": "Kill",
+      "source": "SyntheticRotation.log",
+      "start": "2026-09-20T03:04:50.5300000"
+    }
+  ],
+  "review": [
+    {
+      "id": "R1",
+      "question": "Buster: shape uncertain (SingleTarget, score 0.30)",
+      "severity": "Medium",
+      "subject": "shape",
+      "suggested": []
+    },
+    {
+      "id": "R2",
+      "question": "step 0x00010000: branch: pulls diverge (Cone 2/3, ConeAlt 1/3)",
+      "severity": "Medium",
+      "subject": "timeline",
+      "suggested": []
+    }
+  ],
+  "sources": [
+    {
+      "end": "2026-09-20T03:06:57.0100000",
+      "gameVersion": "2026.08.20.0000.0000",
+      "path": "SyntheticRotation.log",
+      "sha256": "",
+      "start": "2026-09-20T03:00:00.0000000",
+      "version": 24
+    }
+  ],
+  "statuses": [],
+  "tethers": [],
+  "timeline": {
+    "confidence": {
+      "band": "High",
+      "reasons": [],
+      "score": 1
+    },
+    "evidence": [
+      {
+        "data": {
+          "aid": 40101,
+          "delayMad": 0,
+          "delayMedian": 2,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40101,
+              "pull": 0,
+              "t": "2026-09-20T03:00:03.0090000"
+            },
+            {
+              "aid": 40101,
+              "pull": 1,
+              "t": "2026-09-20T03:02:37.0460000"
+            },
+            {
+              "aid": 40101,
+              "pull": 2,
+              "t": "2026-09-20T03:04:52.5360000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40101 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40103,
+          "delayMad": 0,
+          "delayMedian": 3.2,
+          "kind": "CastMulti",
+          "members": [
+            {
+              "aid": 40103,
+              "pull": 0,
+              "t": "2026-09-20T03:00:11.2370000"
+            },
+            {
+              "aid": 40103,
+              "pull": 1,
+              "t": "2026-09-20T03:02:45.2740000"
+            },
+            {
+              "aid": 40108,
+              "pull": 2,
+              "t": "2026-09-20T03:05:00.7640000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "CastMulti aid=40103 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40102,
+          "delayMad": 0,
+          "delayMedian": 6,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40102,
+              "pull": 0,
+              "t": "2026-09-20T03:00:21.2500000"
+            },
+            {
+              "aid": 40102,
+              "pull": 1,
+              "t": "2026-09-20T03:02:55.2870000"
+            },
+            {
+              "aid": 40102,
+              "pull": 2,
+              "t": "2026-09-20T03:05:10.7770000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40102 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40104,
+          "delayMad": 0,
+          "delayMedian": 4.5,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40104,
+              "pull": 0,
+              "t": "2026-09-20T03:00:28.7640000"
+            },
+            {
+              "aid": 40104,
+              "pull": 1,
+              "t": "2026-09-20T03:03:02.8010000"
+            },
+            {
+              "aid": 40104,
+              "pull": 2,
+              "t": "2026-09-20T03:05:18.2910000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40104 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40103,
+          "delayMad": 0,
+          "delayMedian": 5,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40103,
+              "pull": 0,
+              "t": "2026-09-20T03:00:37.7910000"
+            },
+            {
+              "aid": 40103,
+              "pull": 1,
+              "t": "2026-09-20T03:03:11.8280000"
+            },
+            {
+              "aid": 40103,
+              "pull": 2,
+              "t": "2026-09-20T03:05:27.3180000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40103 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40105,
+          "delayMad": 0,
+          "delayMedian": 7,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40105,
+              "pull": 0,
+              "t": "2026-09-20T03:00:48.8070000"
+            },
+            {
+              "aid": 40105,
+              "pull": 1,
+              "t": "2026-09-20T03:03:22.8440000"
+            },
+            {
+              "aid": 40105,
+              "pull": 2,
+              "t": "2026-09-20T03:05:38.3340000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40105 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40106,
+          "delayMad": 0,
+          "delayMedian": 4,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40106,
+              "pull": 0,
+              "t": "2026-09-20T03:00:55.8280000"
+            },
+            {
+              "aid": 40106,
+              "pull": 1,
+              "t": "2026-09-20T03:03:29.8650000"
+            },
+            {
+              "aid": 40106,
+              "pull": 2,
+              "t": "2026-09-20T03:05:45.3550000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40106 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40107,
+          "delayMad": 0,
+          "delayMedian": 5.5,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40107,
+              "pull": 0,
+              "t": "2026-09-20T03:01:05.3480000"
+            },
+            {
+              "aid": 40107,
+              "pull": 1,
+              "t": "2026-09-20T03:03:39.3850000"
+            },
+            {
+              "aid": 40107,
+              "pull": 2,
+              "t": "2026-09-20T03:05:54.8750000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40107 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40102,
+          "delayMad": 0,
+          "delayMedian": 6,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40102,
+              "pull": 0,
+              "t": "2026-09-20T03:01:16.3640000"
+            },
+            {
+              "aid": 40102,
+              "pull": 1,
+              "t": "2026-09-20T03:03:50.4010000"
+            },
+            {
+              "aid": 40102,
+              "pull": 2,
+              "t": "2026-09-20T03:06:05.8910000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40102 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40104,
+          "delayMad": 0,
+          "delayMedian": 4.5,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40104,
+              "pull": 0,
+              "t": "2026-09-20T03:01:23.8780000"
+            },
+            {
+              "aid": 40104,
+              "pull": 1,
+              "t": "2026-09-20T03:03:57.9150000"
+            },
+            {
+              "aid": 40104,
+              "pull": 2,
+              "t": "2026-09-20T03:06:13.4050000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40104 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40103,
+          "delayMad": 0,
+          "delayMedian": 5,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40103,
+              "pull": 0,
+              "t": "2026-09-20T03:01:32.9050000"
+            },
+            {
+              "aid": 40103,
+              "pull": 1,
+              "t": "2026-09-20T03:04:06.9420000"
+            },
+            {
+              "aid": 40103,
+              "pull": 2,
+              "t": "2026-09-20T03:06:22.4320000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40103 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40105,
+          "delayMad": 0,
+          "delayMedian": 7,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40105,
+              "pull": 0,
+              "t": "2026-09-20T03:01:43.9210000"
+            },
+            {
+              "aid": 40105,
+              "pull": 1,
+              "t": "2026-09-20T03:04:17.9580000"
+            },
+            {
+              "aid": 40105,
+              "pull": 2,
+              "t": "2026-09-20T03:06:33.4480000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40105 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40106,
+          "delayMad": 0,
+          "delayMedian": 4,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40106,
+              "pull": 0,
+              "t": "2026-09-20T03:01:50.9420000"
+            },
+            {
+              "aid": 40106,
+              "pull": 1,
+              "t": "2026-09-20T03:04:24.9790000"
+            },
+            {
+              "aid": 40106,
+              "pull": 2,
+              "t": "2026-09-20T03:06:40.4690000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40106 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40107,
+          "delayMad": 0,
+          "delayMedian": 5.5,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40107,
+              "pull": 0,
+              "t": "2026-09-20T03:02:00.4620000"
+            },
+            {
+              "aid": 40107,
+              "pull": 1,
+              "t": "2026-09-20T03:04:34.4990000"
+            },
+            {
+              "aid": 40107,
+              "pull": 2,
+              "t": "2026-09-20T03:06:49.9890000"
+            }
+          ],
+          "support": 3
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40107 support=3/3"
+      },
+      {
+        "data": {
+          "aid": 40102,
+          "delayMad": 0,
+          "delayMedian": 6,
+          "kind": "Cast",
+          "members": [
+            {
+              "aid": 40102,
+              "pull": 0,
+              "t": "2026-09-20T03:02:11.4780000"
+            },
+            {
+              "aid": 40102,
+              "pull": 1,
+              "t": "2026-09-20T03:04:45.5150000"
+            }
+          ],
+          "support": 2
+        },
+        "kind": "Alignment",
+        "summary": "Cast aid=40102 support=2/3"
+      },
+      {
+        "data": {
+          "aid": 40104,
+          "delayMad": 0,
+          "delayMedian": 4.5,
+          "kind": "Timeout",
+          "members": [
+            {
+              "aid": 40104,
+              "pull": 0,
+              "t": "2026-09-20T03:02:18.9920000"
+            }
+          ],
+          "support": 1
+        },
+        "kind": "Alignment",
+        "summary": "Timeout aid=40104 support=1/3"
+      },
+      {
+        "data": {
+          "aid": 40103,
+          "delayMad": 0,
+          "delayMedian": 5,
+          "kind": "Timeout",
+          "members": [
+            {
+              "aid": 40103,
+              "pull": 0,
+              "t": "2026-09-20T03:02:28.0190000"
+            }
+          ],
+          "support": 1
+        },
+        "kind": "Alignment",
+        "summary": "Timeout aid=40103 support=1/3"
+      },
+      {
+        "kind": "Loop",
+        "summary": "start=2 length=6 repeats=2 trailing=3 entry=6.0"
+      },
+      {
+        "kind": "PrimaryDeath",
+        "summary": "DIE+ in 2/3 pulls"
+      }
+    ],
+    "loop": {
+      "entryDelay": 6,
+      "length": 6,
+      "repeats": 2,
+      "startStep": 2,
+      "trailingPartial": 3
+    },
+    "phases": [
+      {
+        "activate": [
+          "Buster",
+          "CircleAndCircle2",
+          "ConeAndConeAlt",
+          "Raidwide2",
+          "Raidwide3"
+        ],
+        "firstStep": 0,
+        "index": 0,
+        "kind": "Death",
+        "name": "Phase0",
+        "stepCount": 8
+      }
+    ],
+    "pullCount": 3,
+    "steps": [
+      {
+        "activate": [
+          "Opener"
+        ],
+        "aid": 40101,
+        "castTime": 5,
+        "deactivate": [
+          "Opener"
+        ],
+        "delay": 2,
+        "id": "0x00000000",
+        "kind": "Cast",
+        "name": "Opener",
+        "of": [
+          40101
+        ],
+        "support": 3,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40103,
+        "castTime": 4,
+        "deactivate": [],
+        "delay": 3.2,
+        "id": "0x00010000",
+        "kind": "CastMulti",
+        "name": "Cone / ConeAlt",
+        "of": [
+          40103,
+          40108
+        ],
+        "review": "branch: pulls diverge (Cone 2/3, ConeAlt 1/3)",
+        "support": 3,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40102,
+        "castTime": 3,
+        "deactivate": [],
+        "delay": 6,
+        "id": "0x00020000",
+        "kind": "Cast",
+        "name": "Circle",
+        "of": [
+          40102
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40104,
+        "castTime": 4,
+        "deactivate": [],
+        "delay": 4.5,
+        "id": "0x00030000",
+        "kind": "Cast",
+        "name": "Raidwide2",
+        "of": [
+          40104
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40103,
+        "castTime": 4,
+        "deactivate": [],
+        "delay": 5,
+        "id": "0x00040000",
+        "kind": "Cast",
+        "name": "Cone",
+        "of": [
+          40103
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40105,
+        "castTime": 3,
+        "deactivate": [],
+        "delay": 7,
+        "id": "0x00050000",
+        "kind": "Cast",
+        "name": "Circle2",
+        "of": [
+          40105
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40106,
+        "castTime": 4,
+        "deactivate": [],
+        "delay": 4,
+        "id": "0x00060000",
+        "kind": "Cast",
+        "name": "Buster",
+        "of": [
+          40106
+        ],
+        "support": 6,
+        "timingMad": 0
+      },
+      {
+        "activate": [],
+        "aid": 40107,
+        "castTime": 5,
+        "deactivate": [],
+        "delay": 5.5,
+        "id": "0x00070000",
+        "kind": "Cast",
+        "name": "Raidwide3",
+        "of": [
+          40107
+        ],
+        "support": 6,
+        "timingMad": 0
+      }
+    ]
+  }
+}

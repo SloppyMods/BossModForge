@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>BossModForge.Tests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BossModForge.Core\BossModForge.Core.csproj" />
+    <ProjectReference Include="..\..\src\BossModForge.Cli\BossModForge.Cli.csproj" />
+    <ProjectReference Include="..\BossModForge.GoldenCompile\BossModForge.GoldenCompile.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\flavors\*.json" Link="flavors\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Golden\**" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Remove="Golden\**" />
+  </ItemGroup>
+</Project>

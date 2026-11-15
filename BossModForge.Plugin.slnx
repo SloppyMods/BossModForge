@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/BossModForge.Core/BossModForge.Core.csproj" />
+  <Project Path="src/BossModForge.Plugin/BossModForge.Plugin.csproj" />
+</Solution>
